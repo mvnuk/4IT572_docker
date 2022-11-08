@@ -3,7 +3,7 @@ name: Build and test eshop
 on:
   workflow_dispatch:
 
-  jobs:
+jobs:
   Install:
     runs-on: ubuntu-latest
 
