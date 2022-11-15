@@ -106,12 +106,12 @@ jobs:
 
     - name: Load Node modules and build folder
       uses: actions/cache@v3.0.11
-        with:
-          path: |
-            ~/.npm
-            ./node_modules
-            ./build
-          key: ${{ runner.os }}-build-${{ github.run_id }}
+      with:
+        path: |
+          ~/.npm
+          ./node_modules
+           ./build
+        key: ${{ runner.os }}-build-${{ github.run_id }}
     
     - name: Deploy to Firebase
       uses: lowply/deploy-firebase@v0.0.5
